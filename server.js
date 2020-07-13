@@ -45,14 +45,5 @@ app.put('/image', (req,res) => {
 app.post('/imageurl', (req,res) => { image.handleApiCall(req,res)})
 
 app.listen(process.env.PORT || 3001, () => {
-	console.log(`App is running on port ${process.env.PORT}')
+	console.log(`App is running on port ${process.env.PORT}`)
 })
-
-
-/*  Planning API - figuring out endpoints
-/ --> res = this is working // root route
-/ signin --> POST  success/fail
-/register --> POST = new user
-/profile/:userId --> GET = user
-/image --> PUT --> user
-*/
